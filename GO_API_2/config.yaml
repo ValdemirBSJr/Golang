@@ -1,0 +1,3 @@
+servidor:
+    host: localhost
+    porta: "8080"

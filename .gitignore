@@ -1,0 +1,57 @@
+# Arquivos e pastas ignorados
+
+*.txt
+*.log
+*.tmp
+*.bak
+
+# Ambiente de desenvolvimento
+
+.idea/
+.vscode/
+.go/
+
+# Arquivos de configuração
+
+.env
+config.json
+
+# Pacotes e dependências
+
+vendor/
+node_modules/
+
+# Cache e temporários
+
+__pycache__/
+venv/
+.venv/
+
+# Informações de build e teste
+
+coverage/
+report/
+
+# Outros
+
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Específico do Go
+
+*.o
+*.out
+*.exe
+cover.out
+
+# Arquivos de teste e cobertura
+
+_test.go
+_test/
+coverage.out
+
+# Diretório de documentação do Go
+
+doc/
