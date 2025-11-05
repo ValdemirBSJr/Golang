@@ -1,6 +1,11 @@
 # Redirecionador SSH em Go
 ==========================
 
+![Go](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white)
+![API](https://img.shields.io/badge/API-007BFF?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0id2hpdGUiPjxwYXRoIGQ9Ik0xOC41IDkgMTEgMS41IDEgMTFsMS41IDEuNUw0IDExLjA2VjIwaDZ2LTZIMTB2LTJsNSA1IDcgLTcuNXoiLz48cGF0aCBkPSJtMjEgMTAtNy41IDcgMS41IDEuNUwyNSA MTB6Ii8+PC9zdmc+)
+![HTTP](https://img.shields.io/badge/HTTP-1E90FF?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0id2hpdGUiPjxwYXRoIGQ9Ik0xMiAyQzYuNDggMiAyIDYuNDggMiAxMnM0LjQ4IDEwIDEwIDEwIDEwLTQuNDggMTAtMTBTMTcuNTIgMiAxMiAyem0wIDE4Yy00LjQxIDAtOC0zLjU5LTgtOHMzLjU5LTggOC04IDggMy41OSA4IDgtMy41OSA4LTggOHptLTQgLTRoOHYtMmgzVjloLTNWN2gtOHYYyaC0zVjEyaDN2MnpNMTAgOWg0VjdoLTR2MnpNMTQgMTdoLTR2LTJoNHYyIi8+PC9zdmc+)
+![SSH](https://img.shields.io/badge/SSH-111111?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0id2hpdGUiPjxwYXRoIGQ9Ik0xOCAzSDZDRTYuNjcgMyAyIDcgMiAxMnMyLjY3IDkgNiA5aDEyYzMuMzEgMCA2LTQgNi05cy0yLjY5LTktNi05em0wIDE2SDZjLTIuMjEgMC00LTIuMjQtNC03czEuNzktNyA0LTdoMTJjMi4yMSAwIDQgMi4yNCA0IDdzLTEuNzkgNy00IDd6TTggMTBoOHYySDh6Ii8+PHBhdGggZD0iTTkgOGgydjZIOXptNCAwaDJ2NmgtMnoiLz48L3N2Zz4=)
+
 ## Descrição Curta
 Este projeto é uma aplicação web simples escrita em Go que redireciona os acessos para um endereço SSH remotamente. É ideal para situações onde é necessário acessar um servidor SSH através de uma aba do navegador.
 
@@ -34,8 +39,7 @@ Este projeto é uma aplicação web simples escrita em Go que redireciona os ace
 6. O navegador redirecionará automaticamente para `ssh://IP_SERVIDOR_REMOTO`.
 
 ## Contato
-Para mais informações, contribuições, ou relatos de bugs, por favor utilize a seção de issues deste repositório ou contate-nos em [seu-email@example.com](mailto:seu-email@example.com).
 
----
-
-Lembre-se de substituir `seu-usuario`, `nome-do-repositorio`, `http://localhost:porta` e `seu-email@example.com` com as informações específicas do seu projeto.
+* **Valdemir Bezerra de Souza Júnior**
+* Analista Infraestrutura | Devops | SRE | Cloud | Oracle Cloud | Linux | Docker | Kubernets | Python | Go | Rust | Lua | N8N | No Code
+* [Linkedin](https://www.linkedin.com/in/valdemirbezerra/)
