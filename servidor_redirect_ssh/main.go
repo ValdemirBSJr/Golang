@@ -47,9 +47,6 @@ func sshHandler(w http.ResponseWriter, r *http.Request) {
 			<a href="%s">clique aqui</a>.</p>
 			<p>Seu sistema deve ter um handler redirector para <code>ssh://</code> (ex: PuTTY no Windows, OpenSSH no Linux/macOS ou MobaXterm ;p).</p>
 
-			<p><i>Desenvolvido pro Alan no final do expediente. Tenham paciência ;p</i></p>
-			<br>
-			<p><i>Desenvolvido por valdemir Bezerra para o Datacenter NE. Todos os direitos reservados.</i></p>
 		</body>
 		</html>
 	`, url, ip, url)
