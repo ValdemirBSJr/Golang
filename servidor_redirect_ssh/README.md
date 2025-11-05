@@ -33,7 +33,6 @@ A forma mais simples de rodar este projeto é usando o Docker.
     ```
 
 3.  **Execute o contêiner:**
-    Você **deve** fornecer a variável de ambiente `SSH_TARGET_URL` com o seu destino SSH.
 
     ```bash
     docker run -d --name ssh-redirect  --restart=unless-stopped -p 8081:8080 ssh-redirect
