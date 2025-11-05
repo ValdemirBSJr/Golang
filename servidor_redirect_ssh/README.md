@@ -23,7 +23,7 @@ A forma mais simples de rodar este projeto é usando o Docker.
 
 1.  **Clone o repositório:**
     ```bash
-    git clone [[https://github.com/ValdemirBSJr/Golang/tree/master/servidor_redirect_ssh.git](https://github.com/ValdemirBSJr/Golang/tree/master/servidor_redirect_ssh.git)]
+    git clone https://github.com/ValdemirBSJr/Golang/tree/master/servidor_redirect_ssh.git
     cd servidor_redirect_ssh
     ```
 
@@ -46,7 +46,7 @@ A forma mais simples de rodar este projeto é usando o Docker.
 
 1.  **Clone o repositório:**
     ```bash
-    git clone [[https://github.com/ValdemirBSJr/Golang/tree/master/servidor_redirect_ssh.git](https://github.com/ValdemirBSJr/Golang/tree/master/servidor_redirect_ssh.git)]
+    git clone https://github.com/ValdemirBSJr/Golang/tree/master/servidor_redirect_ssh.git
     cd servidor_redirect_ssh
     ```
 
