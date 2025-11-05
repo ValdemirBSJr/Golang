@@ -13,29 +13,107 @@ Este projeto é uma aplicação web simples escrita em Go que redireciona os ace
 - **SSH**: Protocolo de rede seguro para operações de rede, terminal, transferência de arquivos e outros serviços de rede.
 - **Go**: Linguagem de programação utilizada para desenvolver a aplicação.
 
-## Como Usar
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/seu-usuario/nome-do-repositorio.git
-   ```
-2. Navegue até o diretório do projeto:
-   ```bash
-   cd nome-do-repositorio
-   ```
-3. Construa o executável (o comando pode variar dependendo do ambiente e versão do Go):
-   ```bash
-   go build main.go
-   ```
-4. Execute o executável:
-   ```bash
-   ./main
-   ```
-   ou
-   ```bash
-   go run main.go
-   ```
+## 🛠️ Pré-requisitos
+* **Para Executar:** [Docker](https://www.docker.com/)
+* **Para Desenvolver:** [Go](https://golang.org/) (versão 1.25 ou superior)
+
+## 🚀 Como Executar (Recomendado)
+
+A forma mais simples de rodar este projeto é usando o Docker.
+
+1.  **Clone o repositório:**
+    ```bash
+    git clone [https://github.com/seu-usuario/nome-do-repositorio.git](https://github.com/seu-usuario/nome-do-repositorio.git)
+    cd nome-do-repositorio
+    ```
+
+2.  **Construa a imagem Docker:**
+    ```bash
+    docker build -t ssh-redirect .
+    ```
+
+3.  **Execute o contêiner:**
+    Você **deve** fornecer a variável de ambiente `SSH_TARGET_URL` com o seu destino SSH.
+
+    ```bash
+    docker run -d \
+      --name ssh-redirect \
+      --restart=unless-stopped \
+      -p 8081:8080 \
+      -e SSH_TARGET_URL="ssh://usuario@seu-servidor-remoto.com:22" \
+      ssh-redirect
+    ```
+    * `-p 8081:8080`: Mapeia a porta `8081` da sua máquina (host) para a porta `8080` do contêiner.
+    * `-e SSH_TARGET_URL=...`: **(OBRIGATÓRIO)** Define o endereço SSH para onde os usuários serão redirecionados.
+
+4.  **Acesse no navegador:**
+    Abra `http://localhost:8081` no seu navegador. Você será imediatamente solicitado a abrir seu cliente SSH.
+
+## ⚙️ Configuração
+
+O servidor é configurado via variáveis de ambiente:
+
+| Variável | Obrigatório | Padrão | Descrição |
+| :--- | :--- | :--- | :--- |
+| `SSH_TARGET_URL` | **Sim** | `""` | O URI completo para o redirecionamento. Ex: `ssh://user@host.com` |
+| `PORT` | Não | `8080` | A porta interna que o servidor Go irá escutar. |
+
+## 💻 Como Executar (Localmente para Desenvolvimento)
+
+1.  **Clone o repositório:**
+    ```bash
+    git clone [https://github.com/seu-usuario/nome-do-repositorio.git](https://github.com/seu-usuario/nome-do-repositorio.git)
+    cd nome-do-repositorio
+    ```
+
+2.  **Instale as dependências:**
+    ```bash
+    go mod tidy
+    ```
+
+3.  **Execute o projeto:**
+    (Lembre-se de definir as variáveis de ambiente)
+    ```bash
+    export SSH_TARGET_URL="ssh://usuario@seu-servidor-remoto.com"
+    export PORT="8080"
+    
+    go run main.go
+    ```
+4.  Acesse `http://localhost:8080` no seu navegador.
+
+<details>
+  <summary>🐳 Ver Dockerfile</summary>
+  
+  ```dockerfile
+  # Dockerfile
+  FROM golang:1.25.2-alpine AS builder
+
+  WORKDIR /app
+  COPY go.mod .
+  # Opcional: baixe as dependências se houver alguma
+  # RUN go mod download
+  COPY main.go .
+  
+  # Constrói o binário estático
+  RUN CGO_ENABLED=0 GOOS=linux go build -a -o ssh-redirect .
+
+  # Fase final: imagem leve
+  FROM alpine:latest
+  
+  # Adiciona certificados (bom para qualquer chamada https futura)
+  RUN apk --no-cache add ca-certificates
+  
+  WORKDIR /root/
+  COPY --from=builder /app/ssh-redirect .
+  
+  # Expõe a porta padrão
+  EXPOSE 8080
+  
+  # O servidor irá rodar na porta $PORT, ou 8080 se não definida
+  CMD ["./ssh-redirect"]
 5. Acesse `http://localhost:porta` no seu navegador (a porta padrão configurada no projeto, geralmente 8080, mas pode ser alterada no código).
 6. O navegador redirecionará automaticamente para `ssh://IP_SERVIDOR_REMOTO`.
+ ```
 
 ## Contato
 
