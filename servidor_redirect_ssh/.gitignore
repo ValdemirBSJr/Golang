@@ -1,0 +1,26 @@
+# Arquivos de ambiente
+.env
+
+# Arquivos de dependência
+Godeps/
+vendor/
+
+# Arquivos de compilação
+*.exe
+*.out
+
+# Arquivos de teste
+_test/
+_test.go
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos de IDE
+.idea/
+.vscode/
+
+# Outros arquivos
+*.tmp
+*.log
