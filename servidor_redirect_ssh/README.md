@@ -2,7 +2,6 @@
 ==========================
 
 ![Go](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white)
-![API](https://img.shields.io/badge/API-007BFF?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0id2hpdGUiPjxwYXRoIGQ9Ik0xOC41IDkgMTEgMS41IDEgMTFsMS41IDEuNUw0IDExLjA2VjIwaDZ2LTZIMTB2LTJsNSA1IDcgLTcuNXoiLz48cGF0aCBkPSJtMjEgMTAtNy41IDcgMS41IDEuNUwyNSA MTB6Ii8+PC9zdmc+)
 ![HTTP](https://img.shields.io/badge/HTTP-1E90FF?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0id2hpdGUiPjxwYXRoIGQ9Ik0xMiAyQzYuNDggMiAyIDYuNDggMiAxMnM0LjQ4IDEwIDEwIDEwIDEwLTQuNDggMTAtMTBTMTcuNTIgMiAxMiAyem0wIDE4Yy00LjQxIDAtOC0zLjU5LTgtOHMzLjU5LTggOC04IDggMy41OSA4IDgtMy41OSA4LTggOHptLTQgLTRoOHYtMmgzVjloLTNWN2gtOHYYyaC0zVjEyaDN2MnpNMTAgOWg0VjdoLTR2MnpNMTQgMTdoLTR2LTJoNHYyIi8+PC9zdmc+)
 ![SSH](https://img.shields.io/badge/SSH-111111?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0id2hpdGUiPjxwYXRoIGQ9Ik0xOCAzSDZDRTYuNjcgMyAyIDcgMiAxMnMyLjY3IDkgNiA5aDEyYzMuMzEgMCA2LTQgNi05cy0yLjY5LTktNi05em0wIDE2SDZjLTIuMjEgMC00LTIuMjQtNC03czEuNzktNyA0LTdoMTJjMi4yMSAwIDQgMi4yNCA0IDdzLTEuNzkgNy00IDd6TTggMTBoOHYySDh6Ii8+PHBhdGggZD0iTTkgOGgydjZIOXptNCAwaDJ2NmgtMnoiLz48L3N2Zz4=)
 
